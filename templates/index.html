@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="Landing Page STMIK Pelita Nusantara" />
+    <meta property="og:description" content="a landing page STMIK Pelita Nusantara created by septianjordanpurba" />
+    <meta property="og:image" content="{{url_for('static', filename='penusa.jpg')}}" />
+    <link rel="shortcut icon" href="{{url_for('static', filename='favicon.ico')}}" type="image/x-icon" />
+    <link rel="icon" href="{{url_for('static', filename='favicon.ico')}}" type="image/x-icon" />
+    <title>STMIK Pelita Nusantara</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!-- === My Font === -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <!-- === My Css === -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='Style/style.css') }}" />
+    <!-- === Bootstrap Icon === -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <script></script>
+  <body>
+    <nav class="navbar bg-body-tertiary fixed-top navbar-expand-lg p-1" id="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#"> <img src="{{ url_for('static', filename='Navbar/penusa.png') }}" class="image me-4" width="50px" height="50px" />STMIK Pelita Nusantara</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#prodi">Program Studi</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Dropdown </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#lokasiPenusa">Lokasi Kampus</a></li>
+                  <li><a class="dropdown-item" href="#form">Apa Kata Mereka</a></li>
+
+                  <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                </ul>
+              </li>
+            </ul>
+            <!-- <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- home section -->
+    <div class="container" style="margin-top: 150px">
+      <div class="jumbotron text-center">
+        <img src="{{ url_for('static', filename='logo/penusa.jpg') }}" class="image" data-aos="fade-right" />
+        <h1 class="display-4 fw-bold" data-aos="fade-right">STMIK Pelita Nusantara</h1>
+        <p class="lead" data-aos="fade-left">
+          PENUSA adalah singkatan dari Pelita Nusantara, STMIK Pelita Nunsatara Medan adalah instansi pendidikan yang bergerak di bidang informatika dan komputer. STMIK Pelita Nusantara memfokuskan diri untuk membantuk seluruh anak bangsa,
+          terutama putra-putri Sumatera Utara yang menginginkan pendidikan pada Sekolah Tinggi untuk mendapatkan sertifikat pendidikan Strata (S1) dan Diploma (D3). Untuk menunjukkan bahwa STMIK Pelita Nusantara Konsisten terhadap
+          pendidikan, setiap tahun menerima mahasiswa beasiswa penuh atau sebagian. Pada tahun 2016 hampir 1/2 mahasiswa aktif pelita nusantara adalah mahasiswa beasiswa. Hal ini sangat didukung oleh Yayasan Demokrat Cemerlang yang menaungi
+          STMIK Pelita Nusantara.
+        </p>
+        <hr class="my-4" />
+        <p data-aos="fade-right">"Pendidikan Untuk Semua"</p>
+        <a class="btn btn-primary btn-lg" href="#prodi" role="button" data-aos="fade-left">Learn more</a>
+      </div>
+    </div>
+    <!-- end home section -->
+    <!-- ProgramStudiSection -->
+    <section id="prodi">
+      <div class="container">
+        <div class="row">
+          <div class="col" data-aos="zoom-in">
+            <div class="sectionTitle text-center">
+              <h1>Program Studi STMIK Pelita Nusantara</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio mollitia laboriosam veritatis natus! Vitae modi corporis tenetur repellendus, velit eius cupiditate maxime sunt quam deserunt commodi cumque facilis tempora
+                mollitia pariatur quos. Maiores molestiae nesciunt id repellendus quis qui repellat sint nobis. Iure eum provident pariatur numquam consectetur et ex.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5 justify-content-center align-items-center" data-aos="zoom-in">
+          <div class="col-md-6">
+            <img src="{{ url_for('static', filename='Prodi Image/Teknik-Informatika.png') }}" class="image img-fluid rounded" />
+          </div>
+          <div class="col">
+            <h2 class="fw-bold text-dark">Program Studi Teknik Informatika <span class="fst-italic text-secondary">(S1)</span></h2>
+            <span class="fw-bold">Akreditasi : Baik Sekali</span>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam suscipit harum nisi asperiores consequuntur, aperiam deleniti, qui autem magnam officia libero iste repellat dolore dolores illo id cum natus! Dolores?</p>
+          </div>
+        </div>
+        <div class="row mb-5 justify-content-center align-items-center" data-aos="zoom-in">
+          <div class="col order-last order-lg-first">
+            <h2 class="fw-bold text-dark">Program Studi Teknik Rekayasa Komputer Jaringan <span class="fst-italic text-secondary">(D4)</span></h2>
+            <span class="fw-bold">Akreditasi : B</span>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam suscipit harum nisi asperiores consequuntur, aperiam deleniti, qui autem magnam officia libero iste repellat dolore dolores illo id cum natus! Dolores?</p>
+          </div>
+          <div class="col-md-6 order-first">
+            <img src="{{ url_for('static', filename='Prodi Image/trkj.jpg') }}" class="image img-fluid rounded" />
+          </div>
+        </div>
+        <div class="row mb-5 justify-content-center align-items-center" data-aos="zoom-in">
+          <div class="col-md-6">
+            <img src="{{ url_for('static', filename='Prodi Image/Teknologi-informasi.jpg') }}" class="image img-fluid rounded" />
+          </div>
+          <div class="col">
+            <h2 class="fw-bold text-dark">Program Studi Teknologi Informasi <span class="fst-italic text-secondary">(S1)</span></h2>
+            <span class="fw-bold">Akreditasi : B</span>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam suscipit harum nisi asperiores consequuntur, aperiam deleniti, qui autem magnam officia libero iste repellat dolore dolores illo id cum natus! Dolores?</p>
+          </div>
+        </div>
+        <div class="row mb-5 justify-content-center align-items-center" data-aos="zoom-in">
+          <div class="col order-last order-lg-first">
+            <h2 class="fw-bold text-dark">Program Studi Bisnis Digital <span class="fst-italic text-secondary">(S1)</span></h2>
+            <span class="fw-bold">Akreditasi : B</span>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam suscipit harum nisi asperiores consequuntur, aperiam deleniti, qui autem magnam officia libero iste repellat dolore dolores illo id cum natus! Dolores?</p>
+          </div>
+          <div class="col-md-6 order-first">
+            <img src="{{ url_for('static', filename='Prodi Image/bisnis.jpeg') }}" class="image img-fluid rounded" />
+          </div>
+        </div>
+        <div class="row mb-5 justify-content-center align-items-center" data-aos="zoom-in">
+          <div class="col-md-6">
+            <img src="{{ url_for('static', filename='Prodi Image/Manajemen-Informatika.jpg') }}" class="image img-fluid rounded" />
+          </div>
+          <div class="col">
+            <h2 class="fw-bold text-dark">Program Studi Manajemen Informatika <span class="fst-italic text-secondary">(D3)</span></h2>
+            <span class="fw-bold">Akreditasi : B</span>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam suscipit harum nisi asperiores consequuntur, aperiam deleniti, qui autem magnam officia libero iste repellat dolore dolores illo id cum natus! Dolores?</p>
+          </div>
+        </div>
+        <div class="row mb-5 justify-content-center align-items-center" data-aos="zoom-in">
+          <div class="col order-lg-first">
+            <h2 class="fw-bold text-dark">Program Studi Rekayasa Perangkat Lunak <span class="fst-italic text-secondary">(S1)</span></h2>
+            <span class="fw-bold">Akreditasi : Proses Akreditasi</span>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam suscipit harum nisi asperiores consequuntur, aperiam deleniti, qui autem magnam officia libero iste repellat dolore dolores illo id cum natus! Dolores?</p>
+          </div>
+          <div class="col-md-6 order-first">
+            <img src="{{ url_for('static', filename='Prodi Image/RPL.jpg') }}" class="image img-fluid rounded" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Prodi Section -->
+    <!-- Locate Campuss -->
+    <section id="lokasiPenusa">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="sectionTitle text-center" data-aos="zoom-in">
+              <h1>Lokasi Kampus <br />STMIK Pelita Nusantara</h1>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6" data-aos="zoom-in">
+            <h5 class="text-center">
+              Kampus 1
+              <hr />
+              <span class="text-secondary fst-italic" style="font-size: 15px">STMIK PELITA NUSANTARA, Jl. Iskandar Muda No.1, Merdeka, Kec. Medan Baru, Kota Medan, Sumatera Utara 20222</span>
+            </h5>
+            <iframe
+              class="rounded"
+              src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d3982.065635015725!2d98.66298382570903!3d3.572378750403706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d3.5723461!2d98.668773!4m5!1s0x30313029cea1eebb%3A0x2b345f687b341739!2sJl.%20Iskandar%20Muda%20No.1%2C%20Merdeka%2C%20Kec.%20Medan%20Baru%2C%20Kota%20Medan%2C%20Sumatera%20Utara%2020222!3m2!1d3.572177!2d98.6605778!5e0!3m2!1sid!2sid!4v1727811811434!5m2!1sid!2sid"
+              width="100%"
+              height="450px"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="col-md-6" data-aos="zoom-in">
+            <h5 class="text-center">
+              Kampus 2
+              <hr />
+              <span class="text-secondary fst-italic" style="font-size: 15px">Jl. Lintas Sumatra, Tj. Garbus Satu, Kec. Lubuk Pakam, Kabupaten Deli Serdang, Sumatera Utara 20551</span>
+            </h5>
+            <iframe
+              class="rounded"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63713.80291369967!2d98.87382739677636!3d3.561519281599356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303148619328435d%3A0xf1eda21878bba7dc!2sKampus%202%20STMIK%20Pelita%20Nusantara!5e0!3m2!1sid!2sid!4v1727811941515!5m2!1sid!2sid"
+              width="100%"
+              height="450px"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form -->
+    <section id="form">
+      <div class="container">
+        <div class="row" style="max-width: 800px; margin: 0 auto">
+          <div class="col">
+            <div class="sectionTitle">
+              <h1 class="text-center">
+                Apa Kata Mereka Tentang <br />
+                STMIK Pelita Nusantara
+              </h1>
+            </div>
+            <form action="" class="col-md-12" autocomplete="off">
+              <div class="mb-3">
+                <label class="form-label">Nama</label>
+                <input type="text" id="name" class="form-control" id="exampleFormControlInput1" placeholder="masukkan nama anda" />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Jurusan</label>
+                <input type="text" id="jurusan" class="form-control" id="exampleFormControlInput1" placeholder="masukkan jurusan anda" />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Pesan</label>
+                <textarea class="form-control" id="word" name="pesan" rows="3"></textarea>
+              </div>
+              <button class="btn btn-outline-success mb-5" onclick="save_word()">Save</button>
+              <div id="word-list"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Form -->
+
+    <!-- === Footer === -->
+    <footer>
+      <div class="container-fluid bg-dark text-light pt-4">
+        <div class="row" style="max-width: 60%; margin: 0 auto">
+          <div class="col-md-4 mb-3">
+            <p>Nama Saya : Septian Jordan Purba</p>
+            <p>Domisili : Serdang Bedagai, Sumatera Utara</p>
+            <p>ID Kegiatan MSIB : 10675905</p>
+          </div>
+          <div class="col-md-4 mb-3">
+            <p>Hobby Saya :</p>
+            <li><i class="bi bi-file-music"></i> Badminton</li>
+            <li><i class="bi bi-file-music"></i> Bermain Gitar</li>
+          </div>
+          <div class="col-md-4 mb-3">
+            <p>Contact Me :</p>
+            <li><i class="bi bi-whatsapp"></i> : 083130630144</li>
+            <li><i class="bi bi-instagram"></i> : @sjordanp12</li>
+            <li><i class="bi bi-envelope"></i> : septianjordanpurba63@gmail.com</li>
+          </div>
+          <hr />
+          <p class="text-center">created with <i class="bi bi-heart-fill" style="color: red"></i> by septianjordanpurba</p>
+        </div>
+      </div>
+    </footer>
+    <!-- === Sweetalert === -->
+    <!-- <script src="sweetalert2.all.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- === My Js === -->
+    <script src="{{ url_for('static', filename='Script/script.js') }}"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

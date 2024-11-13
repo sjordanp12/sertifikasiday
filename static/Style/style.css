@@ -1,0 +1,51 @@
+* {
+  font-family: 'Jost', serif;
+}
+
+/* .navbar {
+  background: transparent !important;
+} */
+
+.navbar {
+  background-color: transparent !important;
+  transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: whitesmoke !important; /* Ganti sesuai keinginan */
+  border-bottom: 1px solid black;
+}
+
+/* === Style navbar Section === */
+.offcanvas {
+  transition: all ease-in-out 0.9s;
+  width: 100% !important;
+  text-align: center;
+  opacity: 90%;
+}
+/* === Style Home Section === */
+.display-4 {
+  margin-top: 50px;
+}
+
+.lead {
+  font-size: 16px;
+}
+/* === Style Prodi Section === */
+.image {
+  margin: 20px 0;
+}
+
+.sectionTitle {
+  margin: 150px 0 0 0;
+}
+
+/* === Style footer === */
+footer li {
+  list-style-type: none;
+}
+
+/* === responsive === */
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+}
